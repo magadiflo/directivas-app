@@ -10,9 +10,7 @@
         </div>
     </div>
     <div class="col-auto">
-        <span class="form-text" error-msg color="#fc3503" *ngIf="tieneError('nombre')">
-            Este campo es requerido
-        </span>
+        <span error-msg color="#fc3503" mensaje="Debe de ingresar este campo" *ngIf="tieneError('nombre')"></span>
     </div>
     <div class="row mt-5">
         <div class="col">
