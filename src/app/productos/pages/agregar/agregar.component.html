@@ -10,11 +10,16 @@
         </div>
     </div>
     <div class="col-auto">
-        <span error-msg color="#fc3503" mensaje="Debe de ingresar este campo" *ngIf="tieneError('nombre')"></span>
+        <span error-msg [color]="color" mensaje="Debe de ingresar este campo" *ngIf="tieneError('nombre')"></span>
     </div>
     <div class="row mt-5">
         <div class="col">
             <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col">
+            <button type="button" class="btn btn-primary" (click)="cambiarColor()">Cambiar color</button>
         </div>
     </div>
 </form>
