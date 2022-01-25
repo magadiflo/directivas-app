@@ -38,3 +38,9 @@
 <strong>Campo nombre con error</strong>
 <pre>{{ this.miFormulario.controls['nombre'].errors | json}}</pre>
 
+<div class="row mt-5" *customIf="miFormulario.valid">
+    <div class="col">
+        <div class="alert alert-primary">Todo OK!</div>
+    </div>
+</div>
+
