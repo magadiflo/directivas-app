@@ -17,7 +17,7 @@ export class AgregarComponent {
   constructor(private fb: FormBuilder) { }
 
   tieneError(campo: string) {
-    return this.miFormulario.controls[campo].errors && this.miFormulario.controls[campo].touched;
+    return this.miFormulario.get(campo)?.invalid || false;
   }
 
   cambiarColor() {

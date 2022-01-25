@@ -10,7 +10,7 @@
         </div>
     </div>
     <div class="col-auto">
-        <span error-msg [color]="color" *ngIf="tieneError('nombre')"></span>
+        <span error-msg [color]="color" [valido]="!tieneError('nombre')"></span>
     </div>
     <div class="row mt-5">
         <div class="col">
